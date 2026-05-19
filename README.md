@@ -7,13 +7,18 @@
 | Skill | 用途 |
 | --- | --- |
 | `fullstack-project-learning` | 快速学习、熟悉或逆向理解一个陌生的前端、后端或全栈项目。它会引导 Codex 先梳理架构，再追踪端到端业务链路，最后设计小而可验证的学习练习。 |
+| `png-bg-remover` | 清理 PNG 切图的背景网格、噪点或残留浅色区域。基于像素级亮度与饱和度分析，将背景设为透明，保留前景装饰元素。 |
 
 ## 仓库结构
 
 ```text
 skills/
-└── fullstack-project-learning/
-    └── SKILL.md
+├── fullstack-project-learning/
+│   └── SKILL.md
+└── png-bg-remover/
+    ├── SKILL.md
+    └── scripts/
+        └── remove-bg.js
 ```
 
 每个 skill 目录至少包含一个 `SKILL.md` 文件。`SKILL.md` 使用 YAML frontmatter 描述 skill 的名称和触发场景，正文则定义具体工作流。
@@ -33,12 +38,14 @@ Windows PowerShell：
 
 ```powershell
 Copy-Item -Recurse .\fullstack-project-learning $env:USERPROFILE\.codex\skills\
+Copy-Item -Recurse .\png-bg-remover $env:USERPROFILE\.codex\skills\
 ```
 
 macOS / Linux：
 
 ```bash
 cp -R ./fullstack-project-learning ~/.codex/skills/
+cp -R ./png-bg-remover ~/.codex/skills/
 ```
 
 复制完成后，重启 Codex 或开启一个新会话，让新的 skill 被重新发现。
