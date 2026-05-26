@@ -8,6 +8,7 @@
 | --- | --- |
 | `fullstack-project-learning` | 快速学习、熟悉或逆向理解一个陌生的前端、后端或全栈项目。它会引导 Codex 先梳理架构，再追踪端到端业务链路，最后设计小而可验证的学习练习。 |
 | `png-bg-remover` | 清理 PNG 切图的背景网格、噪点或残留浅色区域。基于像素级亮度与饱和度分析，将背景设为透明，保留前景装饰元素。 |
+| `redbook-cli` | 使用 `@lucasygu/redbook` 小红书 CLI 搜索、阅读、分析和自动化处理小红书内容，并处理登录 cookie 验证与常见故障。 |
 | `vibecoding-interview` | 在需求塑形、面试官视角评审和 AI 辅助 coding interview 练习之间路由，帮助把粗糙开发想法整理成面试可用任务，或评估 vibe coding 过程与结果。 |
 
 ## 仓库结构
@@ -20,6 +21,8 @@ skills/
 │   ├── SKILL.md
 │   └── scripts/
 │       └── remove-bg.js
+├── redbook-cli/
+│   └── SKILL.md
 └── vibecoding-interview/
     ├── SKILL.md
     ├── SKILL.zh-CN.md
@@ -46,6 +49,7 @@ Windows PowerShell：
 ```powershell
 Copy-Item -Recurse .\fullstack-project-learning $env:USERPROFILE\.codex\skills\
 Copy-Item -Recurse .\png-bg-remover $env:USERPROFILE\.codex\skills\
+Copy-Item -Recurse .\redbook-cli $env:USERPROFILE\.codex\skills\
 Copy-Item -Recurse .\vibecoding-interview $env:USERPROFILE\.codex\skills\
 ```
 
@@ -54,6 +58,7 @@ macOS / Linux：
 ```bash
 cp -R ./fullstack-project-learning ~/.codex/skills/
 cp -R ./png-bg-remover ~/.codex/skills/
+cp -R ./redbook-cli ~/.codex/skills/
 cp -R ./vibecoding-interview ~/.codex/skills/
 ```
 
