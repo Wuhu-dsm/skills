@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibecoding Interview"
+  short_description: "Shape interview prompts and review vibe coding signal."
+  default_prompt: "Help me shape or evaluate a vibe coding interview task."
